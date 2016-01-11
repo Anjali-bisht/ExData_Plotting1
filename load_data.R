@@ -4,7 +4,7 @@ date_time <- function(date, time) {
     return (strptime(paste(date, time), "%d/%m/%Y %H:%M:%S"))
 }
 
-data_load <- function() {
+load_data <- function() {
     filename <- "household_power_consumption.txt"
     df <- read.table(filename,
                      header=TRUE,
